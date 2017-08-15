@@ -16,7 +16,7 @@ To run the application locally, first clone this repository with the following c
 git clone https://github.com/andylushman/burger.git  
 
 Next, install the application dependencies:  
-cd eat-da-burger  
+cd burger  
 npm install  
 
 Finally, run the node server locally:  
