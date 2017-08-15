@@ -1,4 +1,4 @@
-// Import the ORM to implement functions that will interact with the database
+// Import the dao to implement functions that will interact with the database
 var dao = require("../config/dao.js");
 
 // Create the burger object
