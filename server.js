@@ -33,8 +33,6 @@ app.listen(PORT, function() {
 });
 
 
-
-
 function readProducts() {
   console.log("Selecting all burgers...\n");
   connection.query("SELECT * FROM burgers", function(err, res) {
