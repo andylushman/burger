@@ -25,6 +25,23 @@ var routes = require("./controllers/burgers_controller.js");
 
 app.use("/", routes);
 
+//Testing connection
+var connection = require("./config/connection.js");
+
 app.listen(PORT, function() {
   console.log("Server is listening on PORT: " + PORT);
 });
+
+
+
+
+function readProducts() {
+  console.log("Selecting all burgers...\n");
+  connection.query("SELECT * FROM burgers", function(err, res) {
+    if (err) throw err;
+    // Log all results of the SELECT statement
+    console.log(res);
+    connection.end();
+  });
+}
+readProducts();
