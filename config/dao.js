@@ -27,8 +27,9 @@ function objToSql(ob) {
 
 // Object for all our SQL statement functions.
 var dao = {
-  selectAll: function( cb) {
-    var queryString = "SELECT * FROM burgers;"
+  selectAll: function(cb) {
+    var queryString = "SELECT * FROM burgers;";
+    // console.log('connect', connection);
     connection.query(queryString, function(err, result) {
       if (err) {
         throw err;

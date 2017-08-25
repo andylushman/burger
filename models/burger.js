@@ -5,6 +5,7 @@ var dao = require("../config/dao.js");
 var burger = {
   // Select all burger table entries
   selectAll: function(cb) {
+    console.log('callback', cb);
     dao.selectAll("burgers", function(res) {
       cb(res);
     });
