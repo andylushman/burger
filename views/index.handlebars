@@ -1,10 +1,9 @@
-<h1>Eat-Da-Burger!</h1>
+<h1>Eat Da Burger!</h1>
 
-<div>
-
+<main>
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col s6">
         {{#each burgers}}
           {{#unless this.devoured}}
             <div>
@@ -16,7 +15,7 @@
         {{/each}}
       </div>
 
-      <div class="col-sm-6">
+      <div class="col s6">
         {{#each burgers}}
           {{#if this.devoured}}
             <div class='burgerEaten'>
@@ -29,15 +28,14 @@
       </div>
     </div>
   </div>
-
-</div>
+</main>
 
 <h2>Add A Burger Option</h2>
 
 <div class="row">
-  <div class="col-sm-12">
+  <div class="col s4 offset-s4">
     <form action="/burgers" method="POST">
-      <input type="text" id="name" name="burger_name" placeholder="Uber Delicious Burger">
+      <input type="text" id="name" name="burger_name" placeholder="Enter burger name here">
       <button type="submit" class="addBurgerButton">Add The Burger</button>
     </form>
   </div>
